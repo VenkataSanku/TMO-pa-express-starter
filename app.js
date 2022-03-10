@@ -12,11 +12,28 @@ app.get("/health", (req, res) => {
 });
 
 const books = [
-  { id: 1, author: 'author1', title: 'title1', yearPublished: '1998'},
-  { id: 2, author: 'author2', title: 'title2', yearPublished: '1994'},
-  { id: 3, author: 'author3', title: 'title2', yearPublished: '1995'},
+  {
+    "id": 2,
+    "author": "Philip K. Dick",
+    "title": "Do Androids Dream of Electric Sheep?",
+    "yearPublished": 1968
+},
+{
+    "id": 3,
+    "author": "William Gibson",
+    "title": "Neuromancer",
+    "yearPublished": 1984
+},
+{
+    "id": 1,
+    "author": "Douglas Adams",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "yearPublished": 1979
+}
 
 ];
+
+
 
 app.get('/', (req, res) => {
   res.send('hello world')
